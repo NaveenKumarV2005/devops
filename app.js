@@ -6,6 +6,8 @@ app.get("/",(req, res) => {
     res.send("welcome User");
 })
 
-app.listen(PORT, () => {
+const server = app.listen(PORT, () => {
     console.log(`server is running ${PORT}`);
 })
+
+module.exports ={app, server };
